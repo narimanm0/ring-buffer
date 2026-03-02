@@ -64,8 +64,7 @@ When the buffer is full (writer has written N items that haven't been read by so
 
 ```bash
 # From the project root
-mkdir -p out
-javac -d out src/ringbuffer/*.java
+javac -encoding UTF-8 -d out src/ringbuffer/*.java
 ```
 
 ### Run

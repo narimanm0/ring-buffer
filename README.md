@@ -91,3 +91,25 @@ java -cp out ringbuffer.Main
   SlowReader     read pos: 40    missed: 24
 ═══════════════════════════════════════════
 ```
+
+## Diagrams
+
+### Class Diagram
+
+Shows the relationship between `RingBuffer`, `ReaderHandle`, `Writer`, and `Main`.
+
+![Class Diagram](diagrams/class_diagram.png)
+
+
+### Read Flow
+
+Illustrates how independent readers advance through the buffer and handle overwrites.
+
+![Read Sequence Diagram](diagrams/sequence_read.png)
+
+
+### Write Flow
+
+Shows how the single writer writes, overwrites slots, and notifies readers.
+
+![Write Sequence Diagram](diagrams/sequence_write.png)
